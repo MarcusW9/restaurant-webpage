@@ -1,0 +1,110 @@
+@font-face {
+        font-family: 'MyFont';
+        src: url('./TenorSans-Regular.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+      }
+
+:root {
+    --main-font: 'MyFont';
+    --main-color: #FFF9EB;
+
+    font-family: var(--main-font);
+}      
+
+body {
+    margin : 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#logo-container {
+    margin-left: 100px
+}
+
+#logo {
+    height: 100%;
+}
+
+button {
+    width: 100px;
+    height: 100%;
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+}
+
+#hero-container {
+    width: 100vw;
+}
+
+#hero-image {
+    width: 100vw;
+    margin: 0;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    padding: 40px;
+    background-color: var(--main-color);
+}
+
+#about-container>h1 {
+    font-size: 2rem;
+ }
+
+#about-container>p {
+   font-weight: 100;
+   font-size: 1.5rem;
+}
+
+/* MENU PAGE */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 100px;
+    background-color: var(--main-color);
+}
+
+#menu h1{
+    font-size: 2rem;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu li{
+    margin-bottom: 1rem;
+}
+
+/* CONTACT PAGE */
+
+#contact-id {
+    padding: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+}
+
+
+#contact-id ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
